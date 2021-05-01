@@ -4,17 +4,15 @@ const API_KYE = "fc9fe0e75d49d984ba3cfce640d1e05f";
 const COORDS = "coords";
 
 function getWeather(lat, lng) {
-  fetch(
-    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KYE}&units=metric`
-  )
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (json) {
-      const temperature = json.main.temp;
-      const place = json.name;
-      weather.innerText = `${temperature} @${place}`;
-    });
+  fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KYE}&units=metric`)
+  .then((response) => {
+    return response.json();
+  })
+  .then((json) => {
+    const temperature = Math.ceil(json.main.temp);
+    const place = json.name;
+    weather.innerText = `${temperature}° @${place}`;
+  });
 }
 
 function saveCoords(coordsObj) {
