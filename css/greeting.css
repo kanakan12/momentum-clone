@@ -1,0 +1,32 @@
+.greeting-box{
+    display: flex;
+    justify-content: center;
+}
+
+.greeting-box__form {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+.greeting-box__form input {
+    height: 40px;
+    width: 40px;
+    outline: none;
+    text-align: center;
+    border-style: none;
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    transition: width 1s linear;
+}
+
+.greeting-box__form input:focus {
+    width: 16em;
+    transition: width 1s linear;
+}
+
+.greeting-box__title {
+    font-size: 50px;
+}

@@ -5,31 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Momentum Clone</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="js-clock">
-      <spen class="js-title"></spen>
+    <div class="weather-box">
+      <div>
+        <span class="weather-box__weather"></span>
+        <span class="weather-box__temp"></span>
+      </div>
+      <span class="weather-box__city"></span>
     </div>
 
-    <form class="js-form form">
-      <input type="text" placeholder="What is your name?" />
-    </form>
+    <div class="clock-box">
+      <spen class="clock-box__title"></spen>
+    </div>
 
-    <span class="js-greetings greetings"></span>
+    <div class="greeting-box">
+      <form class="greeting-box__form">
+        <span>What is your name?</span>
+        <input type="text" />
+      </form>
+      <span class="greeting-box__title"></span>
+    </div>
 
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
-    </form>
-
-    <ul class="js-toDoList"></ul>
-
-    <span class="js-weather"></span>
+    <div class="toDo-box">
+      <form class="toDo-box__form">
+        <span>Write a to do!</span>
+        <input type="text" />
+      </form>
+      <div class="toDo-box__icon" hidden>
+        <i class="far fa-times-circle"><span>All delete</span></i>
+      </div>
+      <ul class="toDo-box__list"></ul>
+    </div>
 
     <script src="clock.js"></script>
-    <script src="gretting.js"></script>
+    <script src="greeting.js"></script>
     <script src="todo.js"></script>
     <script src="background.js"></script>
     <script src="weather.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fddc3a13b2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

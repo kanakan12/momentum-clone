@@ -1,14 +1,11 @@
+@import "../css/reset.css";
+@import "../css/weather.css";
+@import "../css/clock.css";
+@import "../css/greeting.css";
+@import "../css/todo.css";
+
 body {
   color: white;
-}
-
-.form,
-.greetings {
-  display: none;
-}
-
-.showing {
-  display: block;
 }
 
 @keyframes fadeIn {
@@ -21,7 +18,7 @@ body {
 }
 
 .bgImage {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
