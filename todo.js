@@ -56,7 +56,7 @@ function paintToDo(text) {
   toDos.push(toDoObj);
 }
 
-function handleSubmit(event) {
+function handleToDoSubmit(event) {
   event.preventDefault();
   const currentValue = toDoInput.value;
   paintToDo(currentValue);
@@ -89,7 +89,7 @@ function handleAllDelete() {
 
 function init() {
   loadToDos();
-  toDoForm.addEventListener("submit", handleSubmit);
+  toDoForm.addEventListener("submit", handleToDoSubmit);
   toDoAllDelete.addEventListener("click", handleAllDelete);
 }
 init();
